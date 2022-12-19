@@ -1,11 +1,9 @@
-<p>main works!</p>
-
-<input [(ngModel)] = "numero" />
+<!-- <input [(ngModel)]="numero" />
 <br />
 
-<strong *ngIf="numero > 3">El numero  es mayor a 3</strong>
+<strong *ngIf="numero > 3">El numero es mayor a 3</strong>
 <p *ngIf="numero == 3">El numero es igual a 3</p>
-<strong *ngIf="numero < 3">El numero  es menor a 3</strong>
+<strong *ngIf="numero < 3">El numero es menor a 3</strong>
 
 
 <p></p>
@@ -15,4 +13,37 @@
 </ul>
 <div *ngFor="let sueldo of sueldos">
     <div> Sueldo: {{sueldo}}</div>
-</div>
+</div> -->
+<body  style="text-align: center;"> 
+
+    <h4> Formulario </h4>
+        <section style="text-align: center;">
+            <p> Nombres: 
+                <input class="Controles" [(ngModel)]="Nombre" type="text" name="Nombres" id="nombres" placeholder="Ingrese su Nombres" >
+                <br>
+            </p>
+            <p> Apellidos:
+                <input   class="Controles" [(ngModel)]="Apellido" type="text" name="Nombres" id="nombres" placeholder="Ingrese sus Apellidos" >
+            <br>
+            </p>
+            <p> Email:
+                <input  class="Controles" [(ngModel)]="Email" type="text" name="Nombres" id="nombres" placeholder="Ingrese su dirreccio de Email" >
+            <br>
+            </p>
+            <p> Direccion:
+                <input  class="Controles" [(ngModel)]="Direccion" type="text" name="Nombres" id="nombres" placeholder="Ingrese su Contraseña" >
+            <br>
+            </p>
+            <p> Integrantes:
+                <input  class="Controles" [(ngModel)]="Integrantes" type="text" name="Nombres" id="nombres" placeholder="Confirme su contraseña" >
+            <br>
+            </p>
+            <p> Telefono:
+                <input  class="Controles" [(ngModel)]="Telefono" type="text" name="Nombres" id="nombres" placeholder="Ingrese su Telefono" >
+            <br>
+            </p>
+            
+            <button (click)="Mostrar()" [routerLink]="['2']">IMPRIMIR</button>
+            <button (click)="almacenar()" [routerLink]="['2']">Almacenar</button>
+            
+        </section>

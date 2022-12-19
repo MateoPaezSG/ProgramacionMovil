@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component1Component implements OnInit {
 
-  constructor() { }
+  constructor() { }  
+  Nombre:any;
+  Apellido:any;
+  Email:any;
+  Direccion:any;
+  Integrantes:any;
+  Telefono:any;
+
 
   ngOnInit(): void {
+    this.recuperar();
   }
 
+  recuperar(){
+    this.Nombre= localStorage.getItem('1')
+    this.Apellido= localStorage.getItem('2')
+    this.Email= localStorage.getItem('3')
+    this.Direccion= localStorage.getItem('4' )
+    this.Integrantes= localStorage.getItem('5')
+    this.Telefono= localStorage.getItem('6')
+  }
 }
